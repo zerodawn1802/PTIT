@@ -1,0 +1,2 @@
+1. Tại sao trong mô hình kết hợp, thì người ta ký trước rồi mới mã hoá, đảo ngược lại có sao không
+2. Tác dụng của hàm băm trong pgp là gì?

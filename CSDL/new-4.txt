@@ -1,0 +1,88 @@
+- cơ sở dữ liệu là một tập thông tin có liên quan đến nhau
+- hệ QTCSDL là một hệ thống phần mềm cho phép tạo lập CSDL và điều khiển mọi truy nhập đến CSDL đó
+- hệ CSDL: một CSDL được quản lý bởi một hệ QTCSDL (CSDL hợp nhất, người dùng, phần mềm hệ QTCSDL, phần cứng)
+- một ngôn ngữ con dữ liệu gồm 2 phần: DDL(định nghĩa dữ liệu) và DML(thao tác dữ liệu) (chèn, sửa, lấy, xóa)
+
+- 6 bước thiết kế một CSDL:
++ phân tích yêu cầu
++ thiết kế CSDL mức khái niệm
++ thiết kế CSDL mức logic
++ cải thiện lược đồ
++ thiết kế CSDL mức vật lý
++ thiết kế an toàn bảo mật
+- thuộc tính đơn không bao gồm các thành phần cấu thành - thuộc tính kép (ngược lại)
+- thuộc tính đơn trị có nhiều nhất một giá trị tại một thời điểm cụ thể - thuộc tính đa trị (ngược lại)
+
+- một phụ thuộc hàm mô tả mối quan hệ giữa các thuộc tính trong một quan hệ. phụ thuộc hàm là ràng buộc giữa các thuộc tính
+- 3 luật tiên đề Amstrong: 
++ luật phản xạ: nếu y là con của X, thì X -> Y
++ luật tăng trưởng: nếu X -> Y, thì XZ -> YZ
++ luật bắc cầu: nếu X -> Y và Y -> Z, thì X -> Z
+- 3 hệ quả của tiên đề Amstrong
++ luật chiếu: nếu X -> YZ, thì X -> Y và X -> Z
++ luật cộng thêm: nếu X -> Y và X -> Z, thì X -> YZ
++ luật giả bắc cầu: nếu X -> Y và YZ -> W, thì XZ -> W
+- bao đóng của F là` tất cả các phụ thuộc hàm được suy diễn từ một tập phụ thuộc hàm F
+
+- Siêu khóa: Là một tập các thuộc tính xác định duy nhất thực thể trong quan hệ.
+- Khóa: là một siêu khóa mà khi loại bỏ bất kỳ thuộc tính nào từ khóa này thì nó không còn là một siêu khóa nữa. Nghĩa là, khóa có số thuộc tính là nhỏ nhất.
+- Khóa dự bị: là một tập các thuộc tính khóa nhỏ nhất của lược đồ quan hệ.
+- Khóa chính: là một khóa dự bị được chọn ra. Tất cả các khóa dự bị còn lại trở thành khóa phụ hay khóa thứ cấp.
+
+- Dạng chuẩn 1: Mọi giá trị thuộc tính của quan hệ đều ở dạng nguyên tố - Không có thuộc tính đa trị - Không có thuộc tính dẫn xuất
+- Dạng chuẩn 2: Là dạng chuẩn 1NF - Mọi thuộc tính không khóa đều phụ thuộc hàm đầy đủ vào mọi khóa dự bị của R.
+- Dạng chuẩn 3: R ở dạng 2NF - Không có thuộc tính không khóa nào phụ thuộc hàm bắc cầu vào khóa của R.
+- Dạng chuẩn Boyce-Codd với tập phụ thuộc hàm F nếu với bất kỳ phụ thuộc hàm X -> A thì X là một siêu khóa của R.
+- chuẩn hóa: 
+• Chuẩn hóa về dạng 1NF: loại bỏ dữ liệu dư thừa
+• Chuẩn hóa về 2NF: loại bỏ các phụ thuộc hàm bộ phận
+• Chuẩn hóa về 3NF: loại bỏ các phụ thuộc hàm bắc cầu
++ CHUẨN HÓA TỪ 1NF SANG 2NF: 
+	Loại bỏ các thuộc tính không khóa mà phụ thuộc một phần vào khóa chính để tách thành bảng riêng. Khóa chính của bảng riêng là bộ phận khóa mà chúng phụ thuộc vào.
+	Các thuộc tính còn lại lập thành một bảng với khóa chính là khóa ban đầu.
++ Chuẩn hóa về 3NF (2 cách):
+	Cách 1: 
+		Tìm phủ tối thiểu của tập phụ thuộc hàm của lược đồ ban đầu
+		Loại bỏ các thuộc tính phụ thuộc bắc cầu ra khỏi quan hệ, lập thành bảng mới với khóa chính là thuộc tính bắc cầu
+		Các thuộc tính còn lại lập thành một bảng với khóa chính là khóa ban đầu.
+	Cách 2:
+		Tìm phủ tối thiểu (G) của tập phụ thuộc hàm (F) của lược đồ (R) ban đầu
+		Ứng với mỗi phụ thuộc hàm trong G, lập một bảng quan hệ mới
+		Nếu trong tất cả các bảng mới tạo ra tại bước 2 không có bảng nào chứa một khóa dự bị nào của R thì tạo ra thêm một bảng mới chứa một khóa dự bị của R.
++ Chuẩn hóa về BCNF: 
+	Tìm phủ tối thiểu
+	Phân rã quan hệ ra
+- phủ tối thiểu: : Một tập phụ thuộc hàm F là tối thiểu nếu:
+	+ Mọi phụ thuộc hàm đều có vế phải là một thuộc tính
+	+ F là không dư thừa
+	+ Không có phụ thuộc hàm nào dạng X -> A có thể được thay thế bởi dạng Y -> A và vẫn là một tập tương đương. 
+	Nói cách khác F là một tối giản trái.
+
+- Đại số quan hệ:
+	Năm phép toán cơ bản của đại số quan hệ là phép chọn, phép chiếu, phép hợp, phép trừ và phép tích Đề-các.
+- 2 quan hệ được gọi là khả hợp khi thỏa mãn 2 điều kiện:
+	Chúng phải có cùng số bậc hay cùng số lượng thuộc tính.
+	Miền giá trị của thuộc tính thứ (i) của r và thuộc tính thứ (j) của s phải giống nhau, cho mọi giá trị của I, j.
+	
+
+- SQL:
++ INSERT: Chèn thêm một (các) hàng vào trong một bảng
+	INSERT INTO tablename
+		VALUES (value1, value 2, ...value n);
+
++ SELECT: Lựa chọn các thuộc tính từ các hàng trong một hoặc nhiều bảng hoặc khung nhìn
++ WHERE: Hạn chế việc lựa chọn các hàng dựa trên một biểu thức điều kiện
++ GROUP BY: Gộp nhóm các hàng đã được chọn ra dựa trên một hoặc nhiều thuộc tính
++ HAVING: Hạn chế sự lựa chọn các hàng để gộp nhóm dựa trên một điều kiện
++ ORDER BY: Xếp thứ tự các hàng được chọn
++ UPDATE: Sửa đổi giá trị thuộc tính của một hoặc nhiều hàng của một bảng
+	UPDATE tablename
+		SET columnname = expression [, columnname = expression ]
+		[ WHERE conditionlist ];
+	
++ DELETE: Xoá một hoặc nhiều hàng từ một bảng
+	DELETE FROM tablename
+		[WHERE conditionlist ];
+
+
+
