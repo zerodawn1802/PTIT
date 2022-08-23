@@ -1,0 +1,192 @@
+STT	Text người nói	Intent mô hình dự đoán	Điểm confidence
+1	alo	cant_hear	0.5052
+2	i think i like	intent_like	0.9725
+3	i like both because both are important	intent_both	0.9918
+4	no my job	intent_dont_work	0.7635
+5	no	deny	0.9823
+6	i have never missed a deadline	intent_never_missed_deadline	0.9981
+7	me too	intent_fallback	1.0
+8	to help me to manage my time	intent_advice_manage_time	0.9894
+9	i like friendly work environment	intent_describe_work_environment	0.9986
+10	i am working hard to listen to the other	intent_advice_newbie	0.5943
+11	i think you should study hard	intent_advice_newbie	0.7968
+12	i think you should	ask_back	0.3829
+13	i like working	intent_prefer_working	0.9961
+14	a little bit	affirm	0.5226
+15	not much	deny	0.9863
+16	i always missed a deadline	intent_missed_deadline	0.9955
+17	i don't manage my time	intent_not_advice_manage_time	0.9927
+18	i didn't know	dont_know_remember	0.997
+19	i like the environment that i can improve myself	intent_reason_prefer_study	0.9796
+20	this is very friendly environment	intent_describe_work_environment	0.9943
+21	you should pay attention to the advice of the order	question_ask_how_manage_time	0.4602
+22	as more	intent_fallback	1.0
+23	i live in hanoi	intent_on_time_deadline	0.5594
+24	there was enough	dont_know_remember	0.268
+25	where do you live now	dont_know_remember	0.2556
+26	bit difficult for you	ask_back	0.9674
+27	i like	intent_like	0.9795
+28	only me	intent_fallback	1.0
+29	are alone	deny	0.4959
+30	i guess disappeared difficult for you	ask_back	0.5747
+31	alo meter	cant_hear	0.8517
+32	is it a quiet	intent_fallback	1.0
+33	i don't worry too much	deny	0.8097
+34	coming from my house is a fifteen minute drive from the city center it might not be good for girls who would you select good up but unreliable sources of company	intent_not_advice	0.264
+35	i live in a new house	intent_yes_provide_job	0.2562
+36	news	intent_fallback	1.0
+37	studying	intent_prefer_study	0.9864
+38	yes of course	affirm	0.9956
+39	no i haven't	intent_not_advice	0.7813
+40	i'm on my job	intent_on_time_deadline	0.9941
+41	i think that	affirm	0.995
+42	i think	affirm	0.9839
+43	i think we'll be in	dont_know_remember	0.5738
+44	i haven't no i haven't	intent_not_advice	0.8125
+45	i manage my time on earth	intent_on_time_deadline	0.5701
+46	nah	deny	0.9691
+47	preparing all thing	intent_both	0.5276
+48	for repairing on playing	intent_on_time_deadline	0.6781
+49	two kilometer	intent_both	0.9776
+50	ali owns foreign the ostrich	intent_yes_provide_job	0.3984
+51	i live on nguyenchithanh street	intent_yes_provide_job	0.1425
+52	i live in lao	intent_on_time_deadline	0.4151
+53	i live in a past month	intent_missed_deadline	0.6798
+54	i live with mark program	intent_advice_manage_time	0.9661
+55	i	affirm	0.4638
+56	i live in	intent_on_time_deadline	0.6275
+57	walking	intent_prefer_other	0.8584
+58	yes	affirm	0.9952
+59	no i have never	intent_not_advice	0.7511
+60	no not happen	deny	0.9045
+61	usually i always arrange	intent_advice_manage_time	0.8444
+62	i know	i_know_remember	0.975
+63	all right every time	intent_like_anything	0.7136
+64	i don't know	dont_know_remember	0.9975
+65	if you need to work hard at listening to people	intent_advice_newbie	0.862
+66	you need to be hot and listen to people	intent_advice_newbie	0.4057
+67	no it isn't	deny	0.9502
+68	yes i have ever missed a deadline	intent_missed_deadline	0.7595
+69	every morning i want everything i need to do	intent_like_anything	0.9265
+70	my right i need to do	affirm	0.2862
+71	working environment	intent_describe_work_environment	0.9657
+72	you need to be your best	question_ask_relate_main_job	0.9506
+73	try your best	question_ask_relate_main_job	0.5638
+74	sorry	deny	0.937
+75	i live here alone	intent_dont_like_anything	0.5528
+76	no it's not true far	deny	0.9378
+77	i prefer spending time	intent_advice_manage_time	0.8184
+78	where you live where you live now	question_ask_relate_main_job	0.3284
+79	do you live in a house or an apartment	question_ask_which_prefer_studying_working	0.8179
+80	do you prefer spending time at home or outside	question_ask_which_prefer_studying_working	0.3578
+81	about	intent_fallback	1.0
+82	sorry i can't hear you can you say that again	cant_hear	0.7589
+83	or an apartment	question_ask_which_prefer_studying_working	0.9006
+84	i think starring will take	intent_advice_newbie	0.8313
+85	i don't remember that	dont_know_remember	0.9979
+86	what about you	ask_back	0.9857
+87	have	affirm	0.6827
+88	i manage my time with my schedule	intent_advice_manage_time	0.9971
+89	i think newbies should go heart	intent_advice_newbie	0.9958
+90	i want to study and work for a job	question_ask_which_prefer_studying_working	0.6502
+91	it 's relatable	intent_yes_relate_job	0.8071
+92	i have the deadline for the time like to contact the number of students but i find it's really hard for me to handle eat for a day	intent_both	0.3879
+93	every day	intent_advice_manage_time	0.9644
+94	i think it's really a difficult topic that we're discussing now but to manage your time	question_ask_how_manage_time	0.8273
+95	i think they should try and to find a solution before asking the manager	intent_advice_newbie	0.4138
+96	they should try and find the solution before asking the manager	intent_advice_newbie	0.2329
+97	i have already told you	question_ask_have_missed_deadline	0.6274
+98	i have already told you that they should try to find a solution before asking the manager	intent_both	0.294
+99	i prefer working	intent_prefer_working	0.9962
+100	a well a little bit i'm little bit	affirm	0.2399
+101	well yes of course	affirm	0.9939
+102	i used to ride my schedule in a book	intent_advice_manage_time	0.9837
+103	a friendly college an opportunity to	intent_describe_work_environment	0.5349
+104	i work hard and be patient	intent_advice_newbie	0.9902
+105	should they should work hard and be patient	intent_advice_newbie	0.9885
+106	i want to discuss everything	intent_like_anything	0.9982
+107	i prefer to explore new things	intent_reason_prefer_study	0.9253
+108	yes some time i met the deadline	intent_missed_deadline	0.9686
+109	i scheduled my work every day	intent_advice_manage_time	0.9959
+110	i think newbies need to improve their skills	intent_advice_newbie	0.966
+111	like most	intent_like	0.2924
+112	try new things	intent_reason_prefer_study	0.7489
+113	yes my job requires english skill	intent_dont_work	0.1784
+114	yes my job requires english skills	intent_dont_work	0.1987
+115	sometimes i raise days we have deadlines but sometimes when i have too much to do i can't be late for a deadline	intent_both	0.602
+116	my major is english and matchups requires the english skills	intent_not_all	0.8935
+117	today we have their lives for tax sometimes when i have too much thing to do i can't be late for deadlines	intent_advice_manage_time	0.3253
+118	sometimes i want i have termed thing to do i can be late for deadlines	intent_missed_deadline	0.9262
+119	trying new things	intent_reason_prefer_study	0.5856
+120	today we have realized protests and sometimes well when i have many tart to do i can't be late for deadlines	intent_advice_manage_time	0.5338
+121	i reversed	affirm	0.2908
+122	that 's he or a quiet place to live	question_ask_which_prefer_studying_working	0.7887
+123	i'd prefer spending time at home	intent_both	0.5947
+124	i love shopping	intent_prefer_other	0.9968
+125	i don't like anything	intent_dont_like_anything	0.9981
+126	i find everything boring	intent_like_anything	0.9971
+127	studying is also important	intent_reason_prefer_study	0.3651
+128	if i don't have to earn money to live	intent_prefer_working	0.6321
+129	you have to study really well first	intent_advice_manage_time	0.8869
+130	oh don't ask me about this	dont_know_remember	0.9797
+131	it's a bit related	intent_yes_relate_job	0.9799
+132	it's pretty much related to my major	intent_yes_relate_job	0.9801
+133	who hasn't missed a deadline a few times	intent_never_missed_deadline	0.9954
+134	there were also a few unexpected times so i couldn't finish it before the deadline	intent_missed_deadline	0.9927
+135	it's been a few times already	intent_missed_deadline	0.921
+136	i always check my schedule at the beginning of my shift	intent_advice_manage_time	0.9956
+137	i have a daily schedule for time management	intent_advice_manage_time	0.9901
+138	make a list of your tasks and arrange them in order of priority	intent_advice_manage_time	0.9809
+139	what build your perfect working environment	question_ask_what_perfect_working_environment	0.9973
+140	i love working online	intent_prefer_working	0.9205
+141	i want my office to be as luxurious as a five-star hotel	intent_describe_work_environment	0.4705
+142	i don't like going to work	intent_prefer_working	0.9147
+143	always take the initiative to ask seniors if you don't understand something	dont_know_remember	0.8109
+144	mistakes create experience	intent_advice_newbie	0.9955
+145	don't fall in love at work	intent_advice_newbie	0.9977
+146	do not quarrel with colleagues	intent_advice_newbie	0.9978
+147	how do you think?	cant_hear	0.4306
+148	i don't like all	intent_dont_like_anything	0.9965
+149	never think about it	dont_know_remember	0.9812
+150	i wish it was	affirm	0.9776
+151	my job has nothing to do with my major	intent_reason_prefer_working	0.813
+152	i don't know what it's like to be late for a deadline	dont_know_remember	0.9876
+153	i have almost missed the deadline once	intent_missed_deadline	0.9929
+154	i have never met a deadline	intent_never_missed_deadline	0.9958
+155	my time management skills are very bad	intent_advice_manage_time	0.3591
+156	prioritize the things that need to be done first	intent_advice_manage_time	0.997
+157	create your own schedule and stick to it	intent_advice_manage_time	0.9932
+158	organize important tasks and get them done first	intent_advice_manage_time	0.9709
+159	i manage my time by avoiding multitasking	intent_advice_manage_time	0.9943
+160	i don't get a healthy working workplace	intent_not_have_work_environment	0.9962
+161	what creates your perfect working workroom	question_ask_what_perfect_working_environment	0.9967
+162	doesn't matter to me	deny	0.5785
+163	be friendly	intent_advice_newbie	0.9277
+164	never in my life	intent_never_missed_deadline	0.9979
+165	you're asking the wrong person	deny	0.8045
+166	i like studying	intent_prefer_study	0.9974
+167	s	intent_fallback	1.0
+168	i'm trying to study	intent_prefer_study	0.9301
+169	studying or working which one do you like most	question_ask_which_prefer_studying_working	0.9975
+170	your job related to your major	question_ask_relate_main_job	0.9943
+171	is your job related to your major	question_ask_relate_main_job	0.9959
+172	to explore many new things	intent_reason_prefer_study	0.7308
+173	i always meet deadlines on time	intent_on_time_deadline	0.9985
+174	i don't have any tips	intent_not_advice	0.9518
+175	i want a high salary	intent_describe_work_environment	0.9987
+176	i advise you to walk with a plan	intent_advice_manage_time	0.4451
+177	i think newbie should work hard	intent_advice_newbie	0.9988
+178	i don't quite do the right majors	intent_not_all	0.9988
+179	i never work on time	intent_never_on_time_deadline	0.9985
+180	i make a daily schedule	intent_advice_manage_time	0.997
+181	i don't have any working	intent_dont_work	0.8818
+182	i think newbie need to improve their skills	intent_advice_newbie	0.9777
+183	yes i do	affirm	0.997
+184	nope	deny	0.9843
+185	i don't remember	dont_know_remember	0.9972
+186	i don't know i haven't meet deadlines	dont_know_remember	0.9973
+187	i do not remember	dont_know_remember	0.9973
+188	can you repeat again	cant_hear	0.9918
+189	i always do everything on time	intent_on_time_deadline	0.8202
+190	i don't have any advice	intent_not_advice	0.9924
+191	you can tell him	ask_back	0.3794
